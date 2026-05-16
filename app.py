@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def compare(med_name):
     params = {
         "engine": "google_shopping",
-        "api_key": "f35867128231df83641d255f5a8f475f2627bd65492bc137a3a6b38d0b0515e2",
+        "api_key": st.secrets["SERPAPI_KEY"],
         "q": med_name,
         "gl": "in",  # Country code (e.g., 'us' for USA, 'uk' for UK)
         "hl": "en"
